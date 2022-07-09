@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreKeeper</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="base">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+                alt="">
+        </div>
+        <div class="heading">
+            <p style="margin:0;">Ping Pong Score Keeper</p>
+        </div>
+        <div class="content">
+            <h1 class="score"><span id="player1">0</span> to <span id="player2">0</span></h1>
+            <div class="para">
+                <p>Use the buttons below to keep score</p>
+            </div>
+            
+            <div class="checklist"> 
+                <label for="rounds">Playing To</label>
+                <select name="rounds" id="rounds">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+                <span class="arrow"></span>
+            </div>
+        </div>
+        <div class="btn">
+            <button id="btn1" class="btnStyle btn1Custom btnFocusNotActive btnFocus">PlayerOne+</button>
+            <button id="btn2" class="btnStyle btn2Custom btnFocusNotActive btnFocus">PlayerTwo+</button>
+            <button id="btnR" class="btnStyle btnRCustom btnFocusNotActive btnFocus">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
