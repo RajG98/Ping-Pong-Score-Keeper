@@ -225,3 +225,15 @@ label {
         max-width:55%;
     }
 }
+
+@media (max-width:769px) {
+    .btn{
+        flex-wrap: wrap;
+    }
+    .btnStyle{
+        width:50%;
+    }
+    #btnR{
+        width:100%;
+    }
+}
