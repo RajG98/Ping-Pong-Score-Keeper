@@ -227,6 +227,10 @@ label {
 }
 
 @media (max-width:769px) {
+    body{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .btn{
         flex-wrap: wrap;
     }
