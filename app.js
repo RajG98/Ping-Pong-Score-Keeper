@@ -1,18 +1,16 @@
+const select1 = document.querySelector("#rounds");
 const btn1 = document.querySelector('#btn1');
 const btn2 = document.querySelector('#btn2');
 const reset = document.querySelector('#btnR');
 const player1 = document.querySelector('#player1');
 const player2 = document.querySelector('#player2');
 
-let numDefault = 3;
+let numDefault = parseInt(select1.value);
 let num = numDefault;
 
-window.addEventListener('click', (e) => {
-    if (e.target.nodeName === 'SELECT') {
-        num = parseInt(e.target.value);
-    };
+select1.addEventListener('change', (e) => {
+    num = parseInt(e.target.value);
 })
-
 
 btn1.addEventListener('click', () => {
     scoreKeeper(player1, player2);
